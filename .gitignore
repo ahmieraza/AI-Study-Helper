@@ -1,6 +1,12 @@
 # API Keys and Sensitive Data
 config.js
 
+# Temporary upload files
+UPLOAD_INSTRUCTIONS.md
+QUICK_UPLOAD_GUIDE.md
+TOKEN_GUIDE.md
+PUSH.bat
+
 # Node modules (if you add npm later)
 node_modules/
 

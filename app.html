@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 AI Study Helper</h1>
+            <p>Learn smarter with AI-powered study materials</p>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="topicInput" placeholder="Enter your topic (e.g., Photosynthesis, Python Loops)">
+            
+            <div class="controls">
+                <select id="difficultyLevel">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                
+                <select id="contentType">
+                    <option value="notes">Notes & Summary</option>
+                    <option value="quiz">Quiz (MCQs)</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+
+            <button id="generateBtn" class="btn-primary">Generate Study Material</button>
+        </div>
+
+        <div id="loadingSpinner" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Generating your study material...</p>
+        </div>
+
+        <div id="outputSection" class="output-section hidden">
+            <div class="output-header">
+                <h2>📚 Your Study Material</h2>
+                <button id="clearBtn" class="btn-secondary">Clear</button>
+            </div>
+            <div id="outputContent" class="output-content"></div>
+        </div>
+    </div>
+
+    <script src="config.js" onerror="console.log('Config file not found, using defaults')"></script>
+    <script src="script.js"></script>
+</body>
+</html>

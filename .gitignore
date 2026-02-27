@@ -1,5 +1,5 @@
 # API Keys and Sensitive Data
-config.js
+js/config.js
 
 # Temporary upload files
 UPLOAD_INSTRUCTIONS.md
